@@ -1,0 +1,79 @@
+name: Release
+
+# Releases are created automatically: bump <version> in modDesc.xml and push to main.
+# If no release exists for that version yet, the mod zip is built and released as v<version>.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - modDesc.xml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    # GitHub-hosted runner images can't be pinned by digest, so pin the OS version instead of ubuntu-latest
+    runs-on: ubuntu-26.04
+    env:
+      MOD_NAME: FS25_AutoChipper
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      # actions are pinned to full commit SHAs, the tag is only a comment
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Read version
+        id: version
+        run: |
+          VERSION=$(grep -oP '(?<=<version>)[^<]+' modDesc.xml)
+          if ! [[ "$VERSION" =~ ^[0-9]+(\.[0-9]+){3}$ ]]; then
+            echo "::error::Invalid version '$VERSION' in modDesc.xml (expected e.g. 1.0.0.0)"
+            exit 1
+          fi
+          echo "tag=v$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Check if release exists
+        id: check
+        env:
+          TAG: ${{ steps.version.outputs.tag }}
+        run: |
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            echo "Release $TAG already exists, nothing to do"
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check icon exists
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          ICON=$(grep -oP '(?<=<iconFilename>)[^<]+' modDesc.xml)
+          if [ ! -f "$ICON" ]; then
+            echo "::error::Icon '$ICON' referenced in modDesc.xml is missing"
+            exit 1
+          fi
+
+      - name: Build mod zip
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          ICON=$(grep -oP '(?<=<iconFilename>)[^<]+' modDesc.xml)
+          zip -r -X "$MOD_NAME.zip" modDesc.xml "$ICON" scripts
+
+      - name: Create GitHub release
+        if: steps.check.outputs.exists == 'false'
+        env:
+          TAG: ${{ steps.version.outputs.tag }}
+        run: |
+          gh release create "$TAG" "$MOD_NAME.zip" \
+            --target "$GITHUB_SHA" \
+            --title "$MOD_NAME $TAG" \
+            --generate-notes

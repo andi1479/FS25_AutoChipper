@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="94">
+    <author>Andreas Stuhlberger</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Auto Chipper</en>
+        <de>Auto Hacker</de>
+    </title>
+    <description>
+<en><![CDATA[Chips loose wood lying around your wood chipper - no more driving around branches and crown pieces.
+
+Works with every wood chipper vehicle (e.g. Heizomat HM 10-500 KF, Jenz HEM 922 DQ Cobra hybrid).
+
+- Turn the chipper on, then press Left Alt + C to enable auto chipping
+- Loose cut pieces up to 5 m within 15 m are hopped into the intake one by one and chipped
+- Wood chips go into the chipper as usual - put a trailer under the pipe
+- Standing trees, stumps, longer logs, and logs on trailers or in cranes are left alone
+- Multiplayer supported
+
+Mod for Farming Simulator
+]]></en>
+<de><![CDATA[Hackt herumliegendes Holz rund um den Hacker - kein Herumfahren mehr um Äste und Kronenstücke.
+
+Funktioniert mit jedem Holzhacker-Fahrzeug (z. B. Heizomat HM 10-500 KF, Jenz HEM 922 DQ Cobra hybrid).
+
+- Hacker einschalten, dann mit Linke Alt + C das automatische Hacken aktivieren
+- Lose Stücke bis 5 m im Umkreis von 15 m werden nacheinander in den Einzug gesetzt und gehackt
+- Hackschnitzel kommen wie gewohnt aus dem Rohr - Anhänger darunter stellen
+- Stehende Bäume, Stümpfe, längere Stämme sowie Stämme auf Anhängern oder im Kran bleiben liegen
+- Multiplayer wird unterstützt
+
+Mod für Farming Simulator
+]]></de>
+    </description>
+    <iconFilename>icon_autoChipper.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/AutoChipperRegister.lua"/>
+    </extraSourceFiles>
+
+    <specializations>
+        <specialization name="autoChipper" className="AutoChipper" filename="scripts/AutoChipper.lua"/>
+    </specializations>
+
+    <actions>
+        <action name="AUTOCHIPPER_TOGGLE" category="VEHICLE" axisType="HALF" ignoreComboMask="false"/>
+    </actions>
+    <inputBinding>
+        <actionBinding action="AUTOCHIPPER_TOGGLE">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_c"/>
+        </actionBinding>
+    </inputBinding>
+
+    <l10n>
+        <text name="input_AUTOCHIPPER_TOGGLE">
+            <en>Auto chip nearby wood (on/off)</en>
+            <de>Umliegendes Holz automatisch hacken (an/aus)</de>
+        </text>
+        <text name="action_autoChipperEnable">
+            <en>Auto chip nearby wood: enable</en>
+            <de>Umliegendes Holz hacken: aktivieren</de>
+        </text>
+        <text name="action_autoChipperDisable">
+            <en>Auto chip nearby wood: disable</en>
+            <de>Umliegendes Holz hacken: deaktivieren</de>
+        </text>
+        <text name="info_autoChipperOn">
+            <en>Auto chipper active - pieces up to %d m within %d m</en>
+            <de>Auto Hacker aktiv - Stücke bis %d m im Umkreis von %d m</de>
+        </text>
+        <text name="info_autoChipperTurnOn">
+            <en>Auto chipper waiting - turn the chipper on</en>
+            <de>Auto Hacker wartet - Hacker einschalten</de>
+        </text>
+    </l10n>
+</modDesc>
