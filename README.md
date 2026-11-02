@@ -31,7 +31,7 @@ Activate the mod for your savegame in the mod selection.
 
 | Keyboard | Controller | Action |
 |---|---|---|
-| Left Alt + C | LB + RB + A | Enable / disable auto chipping |
+| Left Alt + C | LB + RB + X | Enable / disable auto chipping |
 
 The keys can be changed in the game's control settings ("Auto chip nearby wood").
 

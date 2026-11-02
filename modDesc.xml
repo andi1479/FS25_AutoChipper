@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="115">
     <author>andi1479</author>
-    <version>1.0.3.0</version>
+    <version>1.0.4.0</version>
     <title>
         <en>Auto Chipper</en>
         <de>Auto Häcksler</de>
@@ -15,9 +15,9 @@ Works with every wood chipper vehicle, e.g. Heizomat HM 10-500 KF and Jenz HEM 9
 
 Hotkeys:
 Keyboard: Left Alt + C - Enable / disable auto chipping
-Controller: LB + RB + A - Enable / disable auto chipping
+Controller: LB + RB + X - Enable / disable auto chipping
 
-Changelog 1.0.3.0:
+Changelog 1.0.4.0:
 - Added controller support (LB + RB + A)
 - New mod icon
 - Updated for the current game version
@@ -33,9 +33,9 @@ Funktioniert mit jedem Holzhäcksler-Fahrzeug, z. B. Heizomat HM 10-500 KF und J
 
 Tastenbelegung:
 Tastatur: Linke Alt + C - Automatisches Häckseln an / aus
-Controller: LB + RB + A - Automatisches Häckseln an / aus
+Controller: LB + RB + X - Automatisches Häckseln an / aus
 
-Changelog 1.0.3.0:
+Changelog 1.0.4.0:
 - Controller-Unterstützung hinzugefügt (LB + RB + A)
 - Neues Mod-Icon
 - An die aktuelle Spielversion angepasst
