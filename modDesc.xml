@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="115">
     <author>Andreas Stuhlberger</author>
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
     <title>
         <en>Auto Chipper</en>
         <de>Auto Hacker</de>
@@ -19,6 +19,11 @@ Controller: LB + RB + A - Enable / disable auto chipping
 
 GitHub: https://github.com/andi1479/FS25_AutoChipper
 
+Changelog 1.0.1.0:
+- Added controller support (LB + RB + A)
+- New mod icon
+- Updated for the current game version
+
 Mod for Farming Simulator
 ]]></en>
 <de><![CDATA[Beschreibung:
@@ -32,6 +37,11 @@ Tastatur: Linke Alt + C - Automatisches Hacken an / aus
 Controller: LB + RB + A - Automatisches Hacken an / aus
 
 GitHub: https://github.com/andi1479/FS25_AutoChipper
+
+Changelog 1.0.1.0:
+- Controller-Unterstützung hinzugefügt (LB + RB + A)
+- Neues Mod-Icon
+- An die aktuelle Spielversion angepasst
 
 Mod für Farming Simulator
 ]]></de>
