@@ -7,27 +7,31 @@
         <de>Auto Hacker</de>
     </title>
     <description>
-<en><![CDATA[Chips loose wood lying around your wood chipper - no more driving around branches and crown pieces.
+<en><![CDATA[Description:
+Chips the loose wood lying around your wood chipper - no more driving around branches and crown pieces after felling trees.
+While enabled and the chipper is turned on, cut pieces up to 5 m within 15 m of the chipper are moved into the intake one by one and chipped. The wood chips go into the chipper as usual and leave through the pipe - put a trailer under the pipe.
+Standing trees, stumps, longer logs and logs on trailers or in cranes are left alone.
+Works with every wood chipper vehicle, e.g. Heizomat HM 10-500 KF and Jenz HEM 922 DQ Cobra hybrid. Multiplayer supported.
 
-Works with every wood chipper vehicle (e.g. Heizomat HM 10-500 KF, Jenz HEM 922 DQ Cobra hybrid).
+Hotkeys:
+Keyboard: Left Alt + C - Enable / disable auto chipping
+Controller: LB + RB + A - Enable / disable auto chipping
 
-- Turn the chipper on, then press Left Alt + C to enable auto chipping
-- Loose cut pieces up to 5 m within 15 m are hopped into the intake one by one and chipped
-- Wood chips go into the chipper as usual - put a trailer under the pipe
-- Standing trees, stumps, longer logs, and logs on trailers or in cranes are left alone
-- Multiplayer supported
+GitHub: https://github.com/andi1479/FS25_AutoChipper
 
 Mod for Farming Simulator
 ]]></en>
-<de><![CDATA[Hackt herumliegendes Holz rund um den Hacker - kein Herumfahren mehr um Äste und Kronenstücke.
+<de><![CDATA[Beschreibung:
+Hackt das lose Holz rund um den Holzhacker - kein Herumfahren mehr um Äste und Kronenstücke nach dem Fällen.
+Ist die Funktion aktiv und der Hacker eingeschaltet, werden geschnittene Stücke bis 5 m im Umkreis von 15 m nacheinander in den Einzug gesetzt und gehackt. Die Hackschnitzel landen wie gewohnt im Hacker und kommen aus dem Rohr - einen Anhänger unter das Rohr stellen.
+Stehende Bäume, Stümpfe, längere Stämme sowie Stämme auf Anhängern oder im Kran bleiben liegen.
+Funktioniert mit jedem Holzhacker-Fahrzeug, z. B. Heizomat HM 10-500 KF und Jenz HEM 922 DQ Cobra hybrid. Multiplayer wird unterstützt.
 
-Funktioniert mit jedem Holzhacker-Fahrzeug (z. B. Heizomat HM 10-500 KF, Jenz HEM 922 DQ Cobra hybrid).
+Tastenbelegung:
+Tastatur: Linke Alt + C - Automatisches Hacken an / aus
+Controller: LB + RB + A - Automatisches Hacken an / aus
 
-- Hacker einschalten, dann mit Linke Alt + C das automatische Hacken aktivieren
-- Lose Stücke bis 5 m im Umkreis von 15 m werden nacheinander in den Einzug gesetzt und gehackt
-- Hackschnitzel kommen wie gewohnt aus dem Rohr - Anhänger darunter stellen
-- Stehende Bäume, Stümpfe, längere Stämme sowie Stämme auf Anhängern oder im Kran bleiben liegen
-- Multiplayer wird unterstützt
+GitHub: https://github.com/andi1479/FS25_AutoChipper
 
 Mod für Farming Simulator
 ]]></de>
@@ -49,6 +53,7 @@ Mod für Farming Simulator
     <inputBinding>
         <actionBinding action="AUTOCHIPPER_TOGGLE">
             <binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_c"/>
+            <binding device="GAMEPAD_DEFAULT" input="BUTTON_5 BUTTON_6 BUTTON_1"/>
         </actionBinding>
     </inputBinding>
 

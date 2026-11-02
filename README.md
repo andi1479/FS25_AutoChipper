@@ -29,7 +29,11 @@ Activate the mod for your savegame in the mod selection.
 3. Press **Left Alt + C** - the F1 help shows "Auto chipper active"
 4. Drive around - nearby pieces get chipped automatically
 
-The key can be changed in the game's control settings ("Auto chip nearby wood").
+| Keyboard | Controller | Action |
+|---|---|---|
+| Left Alt + C | LB + RB + A | Enable / disable auto chipping |
+
+The keys can be changed in the game's control settings ("Auto chip nearby wood").
 
 ## Settings
 
