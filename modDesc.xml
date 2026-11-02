@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="115">
-    <author>Andreas Stuhlberger</author>
-    <version>1.0.2.0</version>
+    <author>andi1479</author>
+    <version>1.0.3.0</version>
     <title>
         <en>Auto Chipper</en>
-        <de>Auto Hacker</de>
+        <de>Auto Häcksler</de>
     </title>
     <description>
 <en><![CDATA[Description:
@@ -17,37 +17,29 @@ Hotkeys:
 Keyboard: Left Alt + C - Enable / disable auto chipping
 Controller: LB + RB + A - Enable / disable auto chipping
 
-GitHub: https://github.com/andi1479/FS25_AutoChipper
-
-Changelog 1.0.2.0:
-- Mod icon now shows the chipper with wheels
-
-Changelog 1.0.1.0:
+Changelog 1.0.3.0:
 - Added controller support (LB + RB + A)
 - New mod icon
 - Updated for the current game version
+- Improved German translation
 
 Mod for Farming Simulator
 ]]></en>
 <de><![CDATA[Beschreibung:
-Hackt das lose Holz rund um den Holzhacker - kein Herumfahren mehr um Äste und Kronenstücke nach dem Fällen.
-Ist die Funktion aktiv und der Hacker eingeschaltet, werden geschnittene Stücke bis 5 m im Umkreis von 15 m nacheinander in den Einzug gesetzt und gehackt. Die Hackschnitzel landen wie gewohnt im Hacker und kommen aus dem Rohr - einen Anhänger unter das Rohr stellen.
+Häckselt das lose Holz rund um den Holzhäcksler - kein Herumfahren mehr um Äste und Kronenstücke nach dem Fällen.
+Ist die Funktion aktiv und der Häcksler eingeschaltet, werden geschnittene Stücke bis 5 m im Umkreis von 15 m nacheinander in den Einzug gesetzt und gehäckselt. Die Hackschnitzel landen wie gewohnt im Häcksler und kommen aus dem Rohr - einen Anhänger unter das Rohr stellen.
 Stehende Bäume, Stümpfe, längere Stämme sowie Stämme auf Anhängern oder im Kran bleiben liegen.
-Funktioniert mit jedem Holzhacker-Fahrzeug, z. B. Heizomat HM 10-500 KF und Jenz HEM 922 DQ Cobra hybrid. Multiplayer wird unterstützt.
+Funktioniert mit jedem Holzhäcksler-Fahrzeug, z. B. Heizomat HM 10-500 KF und Jenz HEM 922 DQ Cobra hybrid. Multiplayer wird unterstützt.
 
 Tastenbelegung:
-Tastatur: Linke Alt + C - Automatisches Hacken an / aus
-Controller: LB + RB + A - Automatisches Hacken an / aus
+Tastatur: Linke Alt + C - Automatisches Häckseln an / aus
+Controller: LB + RB + A - Automatisches Häckseln an / aus
 
-GitHub: https://github.com/andi1479/FS25_AutoChipper
-
-Changelog 1.0.2.0:
-- Mod-Icon zeigt den Hacker jetzt mit Rädern
-
-Changelog 1.0.1.0:
+Changelog 1.0.3.0:
 - Controller-Unterstützung hinzugefügt (LB + RB + A)
 - Neues Mod-Icon
 - An die aktuelle Spielversion angepasst
+- Deutsche Übersetzung verbessert
 
 Mod für Farming Simulator
 ]]></de>
@@ -76,23 +68,23 @@ Mod für Farming Simulator
     <l10n>
         <text name="input_AUTOCHIPPER_TOGGLE">
             <en>Auto chip nearby wood (on/off)</en>
-            <de>Umliegendes Holz automatisch hacken (an/aus)</de>
+            <de>Umliegendes Holz automatisch häckseln (an/aus)</de>
         </text>
         <text name="action_autoChipperEnable">
             <en>Auto chip nearby wood: enable</en>
-            <de>Umliegendes Holz hacken: aktivieren</de>
+            <de>Umliegendes Holz häckseln: aktivieren</de>
         </text>
         <text name="action_autoChipperDisable">
             <en>Auto chip nearby wood: disable</en>
-            <de>Umliegendes Holz hacken: deaktivieren</de>
+            <de>Umliegendes Holz häckseln: deaktivieren</de>
         </text>
         <text name="info_autoChipperOn">
             <en>Auto chipper active - pieces up to %d m within %d m</en>
-            <de>Auto Hacker aktiv - Stücke bis %d m im Umkreis von %d m</de>
+            <de>Auto Häcksler aktiv - Stücke bis %d m im Umkreis von %d m</de>
         </text>
         <text name="info_autoChipperTurnOn">
             <en>Auto chipper waiting - turn the chipper on</en>
-            <de>Auto Hacker wartet - Hacker einschalten</de>
+            <de>Auto Häcksler wartet - Häcksler einschalten</de>
         </text>
     </l10n>
 </modDesc>
